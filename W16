@@ -1,0 +1,57 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+setlocale(LC_ALL, "Russian");
+
+float p;
+
+cout << "P:";
+
+cin >> p;
+
+int k = 1;
+
+float d = 10, s = 10;
+
+while (s <= 200) {
+
+++k;
+
+d += d * p / 100;
+
+s += d;
+
+}
+
+cout<<"k:"<<k<<endl<<"nS:"<< s;
+
+return 0;
+
+}
+
+3 базовый-----5.19
+
+#include <iostream>
+
+#include <cmath>
+
+void sin_print(double from, double to, double step){
+
+while(from<=to){
+
+std::cout << sin(from) << std::endl;
+
+from+=step;
+
+}
+
+}
+
+int main(){
+
+sin_print(0.1, 1.1, 0.1);
+
+}
