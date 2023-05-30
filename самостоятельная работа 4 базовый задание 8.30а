@@ -1,0 +1,6 @@
+// самостоятельная работа 4 базовый задание 8.30а
+#include <iostream>
+using namespace std;
+int main() {
+int a, b;
+cout << "Enter a and b: ";
