@@ -1,1 +1,0 @@
-# -Artemiy_Ponich_C
