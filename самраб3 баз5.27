@@ -1,0 +1,103 @@
+//самраб3 баз5.27 Найти написав 3 кода на с++
+
+б) сумму всех целых чисел от а до 500 (значение а вводится с клавиатуры;
+
+a ≤ 500); в) сумму всех целых чисел от -10 до в (значение в вводится с клавнатуры;
+
+b2-10); г) сумму всех целых чисел от а до 6 (значения а и вводятся с клавиатуры;
+
+b ≥ a).
+
+```c++
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+int a;
+
+cin >> a;
+
+int sum = 0;
+
+for (int i = a; i <= 500; i++) {
+
+sum += i;
+
+}
+
+cout << "Сумма всех целых чисел от " << a << " до 500 равна " << sum << endl;
+
+return 0;
+
+}
+
+```
+
+б)
+
+```c++
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+int b, a = -10;
+
+cin >> b;
+
+int sum = 0;
+
+while (a <= b) {
+
+sum += a;
+
+a++;
+
+}
+
+cout << "Сумма всех целых чисел от -10 до " << b << " равна " << sum << endl;
+
+return 0;
+
+}
+
+```
+
+г)
+
+```c++
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+int a, b;
+
+cin >> a >> b;
+
+int sum = 0;
+
+for (int i = a; i <= 6; i++) {
+
+sum += i;
+
+}
+
+cout << "Сумма всех целых чисел от " << a << " до 6 равна " << sum << endl;
+
+return 0;
+
+}
