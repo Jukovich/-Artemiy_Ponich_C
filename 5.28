@@ -1,0 +1,105 @@
+a) пронзведение всех целых чисел от 8 до 15; б) пронзведенне всех целых чисел от а до 20 (значение а вводится с клавнату-
+
+par; 1 S a s 20);
+
+в) пронзведенне всех целых чисел от 1 до (значение в вводится с клавнату-
+
+p; 1 s b s 20); г) пронзведенне всех целых чисел от а до б (значення а и 6 вводятся
+
+с клавнатуры; b 2 а).
+
+a) Произведение всех целых чисел от 8 до 15:
+
+#include <iostream>
+
+int main() {
+
+int product = 1;
+
+for (int i = 8; i <= 15; i++) {
+
+product *= i;
+
+}
+
+std::cout << "Product of integers from 8 to 15: " << product << std::endl;
+
+return 0;
+
+}
+
+б) Произведение всех целых чисел от a до 20 (значение a вводится с клавиатуры; 1 <= a <= 20):
+
+#include <iostream>
+
+int main() {
+
+int a, product = 1;
+
+std::cout << "Enter a value between 1 and 20: ";
+
+std::cin >> a;
+
+for (int i = a; i <= 20; i++) {
+
+product *= i;
+
+}
+
+std::cout << "Product of integers from " << a << " to 20: " << product << std::endl;
+
+return 0;
+
+}
+
+в) Произведение всех целых чисел от 1 до b (значение b вводится с клавиатуры; 1 <= b <= 20):
+
+#include <iostream>
+
+int main() {
+
+int b, product = 1;
+
+std::cout << "Enter a value between 1 and 20: ";
+
+std::cin >> b;
+
+for (int i = 1; i <= b; i++) {
+
+product *= i;
+
+}
+
+std::cout << "Product of integers from 1 to " << b << ": " << product << std::endl;
+
+return 0;
+
+}
+
+г) Произведение всех целых чисел от a до b (значения a и b вводятся с клавиатуры; b >= a):
+
+#include <iostream>
+
+int main() {
+
+int a, b, product = 1;
+
+std::cout << "Enter a value for a: ";
+
+std::cin >> a;
+
+std::cout << "Enter a value for b (must be greater than or equal to a): ";
+
+std::cin >> b;
+
+for (int i = a; i <= b; i++) {
+
+product *= i;
+
+}
+
+std::cout << "Product of integers from " << a << " to " << b << ": " << product << std::endl;
+
+return 0;
+
+}
