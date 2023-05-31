@@ -1,33 +1,22 @@
-//Самостоятельная работа 3 базовая задача 5.55
-
 #include <iostream>
-
 #include <vector>
 
 float calculateAverageMass(const std::vector<float>& masses) {
+    float sum = 0.0;
+    int count = masses.size();
 
-float sum = 0.0;
+    for (int i = 0; i < count; i++) {
+        sum += masses[i];
+    }
 
-int count = masses.size();
-
-for (int i = 0; i < count; i++) {
-
-sum += masses[i];
-
-}
-
-return sum / count;
-
+    return sum / count;
 }
 
 int main() {
+    std::vector<float> itemMasses = { 2.5, 3.8, 4.2, 2.1, 3.5 };
+    float averageMass = calculateAverageMass(itemMasses);
 
-std::vector<float> itemMasses = { 2.5, 3.8, 4.2, 2.1, 3.5 };
+    std::cout << "Average mass of items: " << averageMass << std::endl;
 
-float averageMass = calculateAverageMass(itemMasses);
-
-std::cout << "Average mass of items: " << averageMass << std::endl;
-
-return 0;
-
+    return 0;
 }
