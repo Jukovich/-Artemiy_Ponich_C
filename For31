@@ -1,69 +1,22 @@
-# include
-
-using namespace std;
-
-int main ()
-
-{
-
-SetConsoleCP(1251);
-
-SetConsoleOutputCP(1251);
-
-int N;
-
-cout << "Введите целое число N(>0): ";
-
-cin >> N;
-
-double A = 2;
-
-for (int i = 1; i <= N; ++i) {
-
-A = 2+1/A;
-
-cout << A << " ";
-
-}
-
-cout << endl;
-
-system ("pause");
-
-return 0;
-
-}
-
-For32. Дано целое число N (> 0). Последовательность вещественных чисел A_K определяется следующим образом: A0 = 1, AK = (AK-1 + 1)/K, K = 1, 2, … . Вывести элементы A1, A2, …, AN.
-
 #include <iostream>
-
+ 
 using namespace std;
-
-int main() {
-
-setlocale(LC_ALL, "Russian");
-
-int n;
-
-cout << "N:";
-
-cin >> n;
-
-float ai = 1;
-
-cout<< ai<<" ";
-
-int i;
-
-for (i = 1; i <= n; ++i) {
-
-cout<< i<<" "<< (ai + 1) / i<<" ";
-
-ai = (ai + 1) / i;
-
-}
-
-return 0;
-
+ 
+int main ()
+ 
+{
+  SetConsoleCP(1251);
+  SetConsoleOutputCP(1251);
+ 
+  int N;
+  cout << "Введите целое число N(>0): ";
+  cin >> N;
+  double A = 2;
+  for (int i = 1; i <= N; ++i) {
+   A = 2+1/A;
+   cout << A << " ";
+  }
+  cout << endl;
+  system ("pause");
+  return 0;
 }

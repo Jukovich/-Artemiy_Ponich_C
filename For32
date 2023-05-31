@@ -7,13 +7,12 @@ int main() {
     cout << "N:";
     cin >> n;
  
-    int f1 = 1, f2 = 1, f = 0;
- 
-    while (f < n + 1) {
-        f = f2 + f1;
-        f2 = f1;
-        f1 = f;
+    float ai = 1;
+    cout<< ai<<" ";
+    int i;
+    for (i = 1; i <= n; ++i) {
+        cout<< i<<" "<< (ai + 1) / i<<" ";
+        ai = (ai + 1) / i;
     }
-    cout << f;
     return 0;
 }

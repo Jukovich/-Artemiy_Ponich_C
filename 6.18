@@ -3,43 +3,26 @@
 using namespace std;
 
 int main()
-
 {
+    double a;
+    cout << "Введите вещественное число a: ";
+    cin >> a;
 
-double a;
+    double sum = 0;
+    int n = 1;
+    while (sum <= a)
+    {
+        sum += 1.0 / n;
+        n++;
+    }
 
-cout << "Введите вещественное число a: ";
+    cout << "Наименьшее n: " << n << endl;
+    cout << "Числа от 1 до n-1: ";
+    for (int i = 1; i < n; i++)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
 
-cin >> a;
-
-double sum = 0;
-
-int n = 1;
-
-while (sum <= a)
-
-{
-
-sum += 1.0 / n;
-
-n++;
-
-}
-
-cout << "Наименьшее n: " << n << endl;
-
-cout << "Числа от 1 до n-1: ";
-
-for (int i = 1; i < n; i++)
-
-{
-
-cout << i << " ";
-
-}
-
-cout << endl;
-
-return 0;
-
+    return 0;
 }
